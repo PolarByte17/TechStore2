@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+.encabezado {
+    padding: 20px;
+    background-color: aquamarine;
+    color: blue;
+}
+
+h1 {
+    margin: 0;
+}
+
+#botonmenu {
+    display: none;
+}
+
+#menunavegacion {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+#menunavegacion a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+@media(max-width:760px) {
+    #botonmenu {
+        display: block;
+        margin-top: 15px;
+        padding: 8px 12px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #menunavegacion {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 15px;
+    }
+
+    #menunavegacion.menu-visible {
+        display: flex;
+    }
+    #menunavegacion a{
+padding: 10px 0;
+}
+}
